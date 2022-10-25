@@ -1,0 +1,72 @@
+<!-- Made by Kjærsti Løkholm Bergli klbergli@gmail.com -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Elevator pitch - design system</title>
+</head>
+
+<body>
+    <h1>Elevator pitch - design system</h1>
+
+    <h2>Colors</h2>
+    <p>The project have derived it's colors from the picture of the woman in
+        the elevator. The colors used are:
+    </p>
+    <div class="colorboxgrid">
+        <div class="colorbox" id="bgColor">Main background color rgb(144 163 173)</div>
+        <div class="colorbox" id="bgColorElevator">Elevator background color rgb(146 157 110)</div>
+        <div class="colorbox" id="headingColor">Heading/paragraph color (H2, H3) rgb(14 20 27)</div>
+        <div class="colorbox" id="linkColor">Link color rgb(206, 201, 200)</div>
+        <div class="colorbox" id="borderColor">Bordercolor rgb(181 181 178)</div>
+    </div>
+    <h2>Fonts</h2>
+    <p>As a start there is only one font that is used for the whole page: </p>
+    <ul>
+        <li id="abelfont"><a href="https://fonts.google.com/specimen/Abel?query=abel" style="font-size: 30px;">Abel</a>
+            from Google Fonts.</li>
+    </ul>
+    <h2>Borders</h2>
+    <p>Each "floor"/section of the page and every picture are styled to have rounded edges and a thin border. </p>
+    <p class="codesnippet">border-radius: 10%;<br>
+        border: 1px solid rgb(181 181 178);</p>
+    <h2>Text styles</h2>
+    <p>The text is styled as follows:</p>
+    <p>The h1 has a background-color of rgb(144 163 173) and color of white.</p>
+    <div class="codesnippet">
+        <p>h1 {<br>
+            padding: 20px;<br>
+            color: white;<br>
+            font-size: 28px;<br>
+            text-align: center;<br>
+            text-transform: uppercase;<br>
+            letter-spacing: 0.3em;<br>
+            }</p>
+            <p id="h1style">This is the style of a h1 header</p>
+    </div>
+   <p>The other headers h2 and h3 has a background-color of 
+    rgb(146 157 110) and the color of 
+    <a href="#headingColor">rgb(14 20 27)</a></p>
+    <div class="codesnippet">
+        <p>
+            h3{<br>
+            font-family: 'Abel', sans-serif;<br>
+            background-color: rgb(146 157 110);<br>
+            color: rgb(14 20 27);<br>
+            font-size: 50px;<br>
+            width: 300px; <br>
+            }
+        </p>
+    <div id="h2style">This is the style of a h2 and h3</div> </div>
+
+
+</body>
+
+</html>
